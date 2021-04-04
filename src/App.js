@@ -1,25 +1,49 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
+import { useState } from "react";
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  const [curNumber, setCurNumber] = useState(0);
+  const words = [
+  {
+    nl: "hoor",
+    ru: "слышать"
+  },
+  {
+    nl: "zeggen",
+    ru: "говорить"
+  },
+  {
+    nl: "lezen",
+    ru: "читать"
+  },
+  {
+    nl: "goed",
+    ru: "хорошо"
+  }
+  ]
+  console.log("Number: " + curNumber);
+  const progressBar = words.map((x, index) => <li key={index}>{index === curNumber ? "1" : "0"}</li>);
 
-export default App;
+  // Хэндленры
+  function handleClickBack(){
+    setCurNumber(curNumber - 1);
+  }
+
+  function handleClickNext(){
+    setCurNumber(curNumber + 1);
+  }
+
+  // Рендер
+  return (<>
+    <div>{words[curNumber].nl}</div>
+    <button onClick={handleClickBack} disabled={curNumber === 0}>Back</button>
+    <button onClick={handleClickNext} disabled={curNumber === words.length - 1}>Next</button>
+    <ul>
+    {progressBar}
+    </ul>
+    </>
+    );
+  }
+
+  export default App;
