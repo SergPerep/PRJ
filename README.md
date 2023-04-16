@@ -17,7 +17,7 @@ function polygon(x, y, radius, sides = 3, angle = 0) {
 }
 ```
 
-## Ping pong animation
+## Sin animation
 
 
 ```javascript
