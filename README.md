@@ -16,3 +16,21 @@ function polygon(x, y, radius, sides = 3, angle = 0) {
   endShape(CLOSE);
 }
 ```
+
+## Ping pong animation
+
+
+```javascript
+
+// time in sec
+const time = minis() / 1000;
+
+function pingPong(time, rotationSpeed, offset) {
+  const angle = rotationSpeed * time + offset;
+  return (sin(angle) + 1) / 2;
+}
+```
+
+```javascript
+const 
+```
