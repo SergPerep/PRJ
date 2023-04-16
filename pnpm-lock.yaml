@@ -1,0 +1,12 @@
+lockfileVersion: '6.0'
+
+dependencies:
+  p5:
+    specifier: ^1.6.0
+    version: 1.6.0
+
+packages:
+
+  /p5@1.6.0:
+    resolution: {integrity: sha512-RowF+RxfVUhJm/YKXL5TCFzTqnwAIwK6W1VGs9LAqSf3PCmLz9Igbxzlf0Ry5IMV71L42wipCdH/bDiNsqAstA==}
+    dev: false
