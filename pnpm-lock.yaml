@@ -4,9 +4,43 @@ dependencies:
   p5:
     specifier: ^1.6.0
     version: 1.6.0
+  p5.capture:
+    specifier: ^1.4.1
+    version: 1.4.1
 
 packages:
 
+  /events@3.3.0:
+    resolution: {integrity: sha512-mQw+2fkQbALzQ7V0MY0IqdnXNOeTtP4r0lN9z7AAawCXgqea7bDii20AYrIBrFd/Hx0M2Ocz6S111CaFkUcb0Q==}
+    engines: {node: '>=0.8.x'}
+    dev: false
+
+  /fflate@0.7.4:
+    resolution: {integrity: sha512-5u2V/CDW15QM1XbbgS+0DfPxVB+jUKhWEKuuFuHncbk3tEEqzmoXL+2KyOFuKGqOnmdIy0/davWF1CkuwtibCw==}
+    dev: false
+
+  /gif.js@0.2.0:
+    resolution: {integrity: sha512-bYxCoT8OZKmbxY8RN4qDiYuj4nrQDTzgLRcFVovyona1PTWNePzI4nzOmotnlOFIzTk/ZxAHtv+TfVLiBWj/hw==}
+    dev: false
+
+  /h264-mp4-encoder@1.0.12:
+    resolution: {integrity: sha512-xih3J+Go0o1RqGjhOt6TwXLWWGqLONRPyS8yoMu/RoS/S8WyEv4HuHp1KBsDDl8srZQ3gw9f95JYkCSjCuZbHQ==}
+    dev: false
+
+  /p5.capture@1.4.1:
+    resolution: {integrity: sha512-UFXqHP/NqiKWkbC60E9R8jRRwP/4E8T5vvw5shZjuJAmDS3tesp9D/PuoZE0enCvOBqR1ehqIyspytujacPJ3Q==}
+    dependencies:
+      events: 3.3.0
+      fflate: 0.7.4
+      gif.js: 0.2.0
+      h264-mp4-encoder: 1.0.12
+      webm-writer: 1.0.0
+    dev: false
+
   /p5@1.6.0:
     resolution: {integrity: sha512-RowF+RxfVUhJm/YKXL5TCFzTqnwAIwK6W1VGs9LAqSf3PCmLz9Igbxzlf0Ry5IMV71L42wipCdH/bDiNsqAstA==}
+    dev: false
+
+  /webm-writer@1.0.0:
+    resolution: {integrity: sha512-xafP4mzUqht03HBXP0Ov2YGsxfD08uncad9fQeshYwQXrcP6Z/4uxd1IUaGKqKigFPAgaD9xb6JEKA8SXLQMLA==}
     dev: false
